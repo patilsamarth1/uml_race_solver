@@ -29,7 +29,7 @@ class RaceSolver(object):
 		self.velocity_pub.publish(velocity)
 
 	def run(self):
-		r = rospy.Rate(10)
+		r = rospy.Rate(9)
 		while not rospy.is_shutdown():
 			self.do_work()
 			r.sleep() 
